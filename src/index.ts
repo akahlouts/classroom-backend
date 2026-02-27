@@ -32,6 +32,8 @@ app.get("/", (_req, res) => {
   res.json({ message: "Hello, Welcome to the Classroom API!" });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
+module.exports = app;
+
+// app.listen(PORT, () => {
+//   console.log(`Server is running at http://localhost:${PORT}`);
+// });
